@@ -1,3 +1,14 @@
-[gd_scene format=3 uid="uid://b343dorsoy4hy"]
+[gd_scene load_steps=3 format=3 uid="uid://b343dorsoy4hy"]
+
+[ext_resource type="Script" path="res://Camera.gd" id="1_v11ry"]
+
+[sub_resource type="PlaceholderTexture2D" id="PlaceholderTexture2D_63h37"]
+size = Vector2(30, 30)
 
 [node name="Level" type="Node2D"]
+
+[node name="Camera2D" type="Camera2D" parent="."]
+script = ExtResource("1_v11ry")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+texture = SubResource("PlaceholderTexture2D_63h37")

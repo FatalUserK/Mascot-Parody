@@ -3,7 +3,7 @@
 [ext_resource type="Script" path="res://Scripts/Camera.gd" id="1_v11ry"]
 [ext_resource type="Texture2D" uid="uid://chtbsrl77mo5r" path="res://GridArt.png" id="2_he3ps"]
 [ext_resource type="Texture2D" uid="uid://bcielqbo66n7o" path="res://icon.svg" id="3_q7peh"]
-[ext_resource type="Script" path="res://Scenes/Subscenes/UI Draggable Test.gd" id="4_lgxng"]
+[ext_resource type="Script" path="res://Scenes/Subscenes/scripts/UI Draggable Test.gd" id="4_lgxng"]
 
 [sub_resource type="PlaceholderTexture2D" id="PlaceholderTexture2D_63h37"]
 size = Vector2(30, 30)

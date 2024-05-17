@@ -3,6 +3,8 @@ extends TextureRect
 var objectID
 var placementCost
 var previewDataOverride = {}
+var data = {}
+
 
 var DRAGPREVIEW = preload("res://Scenes/Subscenes/DragPreview.tscn")
 
@@ -10,7 +12,7 @@ var DRAGPREVIEW = preload("res://Scenes/Subscenes/DragPreview.tscn")
 func _get_drag_data(position: Vector2):
 	var slot = get_parent().get_name()
 	
-	var data = {}
+
 	data["ID"] = objectID
 	data["cost"] = placementCost
 	data["previewOverride"] = previewDataOverride
@@ -23,6 +25,7 @@ func _get_drag_data(position: Vector2):
 	
 func _can_drop_data(at_position, data):
 	return data is Texture2D
+
 	
 func _drop_data(at_position, data):
 	texture = data

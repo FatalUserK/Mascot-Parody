@@ -14,10 +14,10 @@ func _ready():
 func _process(delta):
 	global_position = get_global_mouse_position()
 	
-	print("MOUSE DRAG CONTINUING!!")
 
-	if Input.is_action_just_released("LEFTMOUSE"):
-		print("MOUSE DRAG HALTING!!")
+
+	if Input.is_action_just_released("LeftMouse"):
+
 		queue_free()
 	
 	pass

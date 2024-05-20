@@ -20,11 +20,12 @@ func _get_drag_data(position: Vector2):
 	var dragPreview = DRAGPREVIEW.instantiate()
 
 	add_child(dragPreview)
+	dragPreview.data = data
 		
 	return data
 	
 func _can_drop_data(at_position, data):
-	return data is Texture2D
+	return false
 
 	
 func _drop_data(at_position, data):

@@ -1,9 +1,13 @@
 extends TextureRect
 
+var data = {}
+
 var objectID
 var placementCost
 var previewDataOverride = {}
-var data = {}
+
+var overrideImageValid
+var overrideImageInvalid
 
 
 var DRAGPREVIEW = preload("res://Scenes/Subscenes/DragPreview.tscn")

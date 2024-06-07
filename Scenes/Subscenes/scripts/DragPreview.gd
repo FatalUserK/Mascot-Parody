@@ -14,7 +14,7 @@ func _ready():
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(delta):
-	global_position = get_global_mouse_position()
+	global_position = snapped(get_global_mouse_position(),Vector2(16, 16))
 	
 
 
